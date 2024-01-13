@@ -8,9 +8,6 @@ import styles from "./page.module.scss";
 import { useAppState } from "@/utils/appStateContext";
 import { AnimatePresence } from "framer-motion";
 const Navbar = () => {
-  const set = () => {
-    console.log("ran");
-  };
   const { isOpen, setIsOpen } = useAppState();
   const items = [
     {
