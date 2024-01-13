@@ -1,0 +1,88 @@
+.heading{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+    }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.subText{
+    font-weight: 300;
+    padding: 2px 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.desc{
+    font-weight: 500;
+    font-size: 3rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.55rem;
+    }
+    // @media screen and (max-width: 428px) {
+    //     font-size: 1.2rem;
+    // }
+    line-height: 1;
+    text-align: justify;
+    .body{
+        position: relative;
+        .mainPara{
+            @media screen and (max-width: 768px) {
+                display: flex;
+            }
+            @media screen and (max-width: 428px) {
+               display: flex;
+               flex-wrap: wrap;
+               line-height: 1.2;
+            }
+            margin: 0;
+            &:nth-of-type(1){
+                span{
+                    @media screen and (max-width: 768px) {
+                        margin-right: 4px;
+                    }
+                    // @media screen and (max-width: 428px) {
+                    //     margin-right: 2px;
+                    // }
+                    margin-right: 8px;
+                }
+                .mask{
+                    position: relative;
+                    display: inline-flex;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+
+.descEthic{
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    .body{
+        position: relative;
+        .mainPara{
+            margin: 0;
+            &:nth-of-type(1){
+                span{
+                    margin-right: 3px;
+                }
+                .mask{
+                    position: relative;
+                    display: inline-flex;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
