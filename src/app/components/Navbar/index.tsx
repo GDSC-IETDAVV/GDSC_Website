@@ -26,6 +26,10 @@ const Navbar = () => {
       href: "#about",
     },
     {
+      title: "Tech Stack",
+      href: "#techstack",
+    },
+    {
       title: "Contact",
       href: "#contact",
     },
@@ -65,7 +69,7 @@ const Navbar = () => {
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-24 w-full mx-80 items-baseline h-max">
           <motion.p
             transition={{ delay: 0.5 }}
-            className="text-4xl sm:text-6xl font-bold"
+            className="text-4xl sm:text-6xl w-max sm:w-auto font-bold"
           >
             Where to?
           </motion.p>
