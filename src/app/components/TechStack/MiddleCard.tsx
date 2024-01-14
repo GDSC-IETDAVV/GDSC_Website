@@ -31,7 +31,7 @@ const MiddleCard = () => {
         </div>
         <div>
           <p className="text-justify text-sm sm:text-base">
-            We're built different, so we build different. Our mission is to
+            We&#39;re built different, so we build different. Our mission is to
             empower future developers by bringing students passionate about
             technology together and helping them grow their skills in tech,
             regardless of background.
