@@ -29,7 +29,7 @@ const Item: React.FC<ItemProps> = ({ data }) => {
       // variants={revelAnim}
       // initial="initial"
       // animate={isOpen ? "open" : "closed"}
-      // className=""
+      className="w-max"
     >
       <Link
         href={data.href}
