@@ -31,7 +31,7 @@ const Navbar = () => {
       href: "#contact",
     },
   ];
-  console.log(window.innerHeight, window.innerWidth);
+  // console.log(window.innerHeight, window.innerWidth);
   const x = window.innerWidth / 3;
   const y = window.innerHeight / 3;
   const maskSize = isOpen ? 2800 : 0;
