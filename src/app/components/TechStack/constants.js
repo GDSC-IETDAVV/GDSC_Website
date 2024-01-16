@@ -24,7 +24,7 @@ export const data = [
         names: ["Anuj Malviya"],
     },
     {
-        stack: "UI/UX Designer",
+        stack: "UI/UX Design",
         names: ["Kanishk Tiwari", "Tanmay Bhadviya"],
     },
     {

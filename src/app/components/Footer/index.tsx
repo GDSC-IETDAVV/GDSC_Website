@@ -220,7 +220,7 @@ const Footer = () => {
             exit="closed"
             custom={4}
           >
-            <span className="font-normal text-xl">
+            <span className="font-normal sm:text-xl text-lg">
               Developer&#39;s Student Club
             </span>
           </motion.div>

@@ -5,6 +5,9 @@
     @media screen and (max-width: 1024px) {
         font-size: 2.5rem;
     }
+    @media screen and (max-width: 648px) {
+        font-size: 1.75rem;
+    }
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -12,6 +15,10 @@
     width: 100%;
     font-size: 1.15rem;
     line-height: 1.75rem;
+    @media screen and (max-width: 648px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
     text-align: justify;
     display: flex;
     justify-content: center;

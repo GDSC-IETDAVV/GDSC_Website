@@ -25,9 +25,9 @@
     @media screen and (max-width: 768px) {
         font-size: 1.55rem;
     }
-    // @media screen and (max-width: 428px) {
-    //     font-size: 1.2rem;
-    // }
+    @media screen and (max-width: 428px) {
+        font-size: 1.4rem;
+    }
     line-height: 1;
     text-align: justify;
     .body{
@@ -69,6 +69,10 @@
     font-size: 16px;
     line-height: 28px;
     text-align: justify;
+    @media screen and (max-width: 648px) {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
     .body{
         position: relative;
         .mainPara{
