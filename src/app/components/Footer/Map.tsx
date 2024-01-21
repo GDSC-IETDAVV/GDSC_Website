@@ -2,36 +2,46 @@
 import { Loader } from "@googlemaps/js-api-loader";
 import React, { useEffect, useRef } from "react";
 const Map = () => {
-  const mapRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const initialize = async () => {
-      const loader = new Loader({
-        apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
-        version: "weekly",
-      });
-      const { Map } = await loader.importLibrary("maps");
-      const { Marker } = (await loader.importLibrary(
-        "marker"
-      )) as google.maps.MarkerLibrary;
-      const pos = {
-        lat: 22.6813214390088,
-        lng: 75.87922607893798,
-      };
-      const opt: google.maps.MapOptions = {
-        center: pos,
-        zoom: 15,
-        mapId: "GDSC_LOCATION",
-      };
-      const map = new Map(mapRef.current as HTMLDivElement, opt);
-      const marker = new Marker({
-        map: map,
-        position: pos,
-      });
-    };
-    initialize();
-  }, []);
+  // const mapRef = useRef<HTMLDivElement>(null);
+  // useEffect(() => {
+  //   const initialize = async () => {
+  //     const loader = new Loader({
+  //       apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
+  //       version: "weekly",
+  //     });
+  //     const { Map } = await loader.importLibrary("maps");
+  //     const { Marker } = (await loader.importLibrary(
+  //       "marker"
+  //     )) as google.maps.MarkerLibrary;
+  //     const pos = {
+  //       lat: 22.6813214390088,
+  //       lng: 75.87922607893798,
+  //     };
+  //     const opt: google.maps.MapOptions = {
+  //       center: pos,
+  //       zoom: 15,
+  //       mapId: "GDSC_LOCATION",
+  //     };
+  //     const map = new Map(mapRef.current as HTMLDivElement, opt);
+  //     const marker = new Marker({
+  //       map: map,
+  //       position: pos,
+  //     });
+  //   };
+  //   initialize();
+  // }, []);
 
-  return <div style={{ height: "400px" }} ref={mapRef}></div>;
+  // return <div style={{ height: "400px" }} ref={mapRef}></div>;
+  return (
+    <div className="">
+      <iframe
+        id="iframemap"
+        src="https://maps.google.com/maps?q=Institute+of+Engineering+%26+Technology,+DAVV/@22.6810222,75.8766931,18z&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+        width="100%"
+        height="400px"
+      ></iframe>
+    </div>
+  );
 };
 
 export default Map;
