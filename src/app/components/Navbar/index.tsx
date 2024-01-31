@@ -16,19 +16,19 @@ const Navbar = () => {
     },
     {
       title: "Events",
-      href: "#events",
+      href: "/events",
     },
     {
       title: "About",
-      href: "#about",
+      href: "/#about",
     },
     {
       title: "Tech Stack",
-      href: "#techstack",
+      href: "/#techstack",
     },
     {
       title: "Contact",
-      href: "#contact",
+      href: "/#contact",
     },
   ];
   // console.log(window.innerHeight, window.innerWidth);
@@ -82,22 +82,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// <motion.div
-//   variants={NavAnimation}
-//   animate="enter"
-//   exit="exit"
-//   initial="initial"
-//   className="fixed right-0 top-0 w-screen h-screen bg-[black] text-[white] z-5"
-// >
-//   <div className="p-24 flex justify-between">
-//     <div className="flex flex-col text-6xl gap-12 mt-20 font-thin">
-//       <div className="mb-10">
-//         <p className="font-extrabold">Navigation</p>
-//       </div>
-//       {items.map((item, index) => {
-//         return <Item key={index} data={{ ...item, index }} />;
-//       })}
-//     </div>
-//   </div>
-// </motion.div>

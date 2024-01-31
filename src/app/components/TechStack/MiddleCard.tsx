@@ -15,7 +15,7 @@ const MiddleCard = () => {
             delay: 2.5,
           },
         }}
-        className="flex flex-col gap-8 sm:w-[480px] h-max border border-[#157BF6] rounded-xl p-8"
+        className="flex flex-col gap-8 sm:w-[520px] h-max border border-[#157BF6] rounded-xl p-8"
       >
         {/* Text and Logo */}
         <div className="flex flex-row gap-4 items-center">
