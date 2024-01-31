@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import { AnimatePresence } from "framer-motion";
 import { useAppState } from "@/utils/appStateContext";
 import { useScrollBlock } from "@/utils/useScrollBlock";
-const event = () => {
+const Event = () => {
   const { isOpen, setIsOpen } = useAppState();
   const [blockScroll, allowScroll] = useScrollBlock();
   isOpen ? blockScroll() : allowScroll();
@@ -21,4 +21,4 @@ const event = () => {
   );
 };
 
-export default event;
+export default Event;
