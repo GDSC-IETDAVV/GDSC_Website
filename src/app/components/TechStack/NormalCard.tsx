@@ -1,11 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 interface NormalCardParams {
-  name: Array<String>;
-  stack: String;
+  name: Array<string>;
+  stack: string;
+  color: string;
   custom: number;
 }
-const NormalCard: React.FC<NormalCardParams> = ({ name, stack, custom }) => {
+const NormalCard: React.FC<NormalCardParams> = ({
+  name,
+  stack,
+  color,
+  custom,
+}) => {
   const ind = custom;
   return (
     <motion.div
@@ -19,9 +25,13 @@ const NormalCard: React.FC<NormalCardParams> = ({ name, stack, custom }) => {
           delay: 0.75 * ind,
         },
       }}
-      className="flex flex-col gap-8 border border-black rounded-xl pb-5 h-max w-[300px] sm:w-[360px] min-h-56 relative"
+      className="flex flex-col gap-8 border border-black rounded-xl pb-5 h-max w-[300px] sm:w-[336px] min-h-56 relative"
     >
-      <div className="absolute w-full h-8 bg-[#157BF6] rounded-tl-lg rounded-tr-lg"></div>
+      <div
+        className={
+          "absolute w-full h-8 rounded-tl-lg rounded-tr-lg bg-[#4285F4]"
+        }
+      ></div>
       <div className="flex flex-col gap-10 sm:gap-8 justify-between items-center mt-12">
         <div className="text-xl sm:text-3xl font-bold text-center w-min sm:[line-height:1.3] [line-height:1]">
           {stack}

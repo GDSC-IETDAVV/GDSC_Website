@@ -25,10 +25,6 @@ const Item: React.FC<ItemProps> = ({ data }) => {
       animate="enter"
       exit="exit"
       initial="initial"
-      // custom={data.index}
-      // variants={revelAnim}
-      // initial="initial"
-      // animate={isOpen ? "open" : "closed"}
       className="w-max"
     >
       <Link
