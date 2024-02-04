@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 interface cardArray {
@@ -6,8 +5,9 @@ interface cardArray {
 	role: string;
 	imageUrl: string;
 	bio: string;
-	xUrl: string;
+	xUrl?: string;
 	linkedinUrl: string;
+	githubUrl?: string;
 }
 
 interface CardProps {
@@ -28,7 +28,7 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
 				{people.map((person) => (
 					<li key={person.name}>
 						<img
-							className="aspect-[3/2] w-full rounded-2xl object-cover"
+							className="aspect-[1/1] w-full rounded-2xl object-cover object-center"
 							src={person.imageUrl}
 							alt={person.name}
 						/>
@@ -42,9 +42,11 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
 						<ul role="list" className="mt-6 flex gap-x-6">
 							<li>
 								<a
-									href={person.xUrl}
+									href={person.xUrl ? person.xUrl : person.githubUrl}
 									className="text-gray-400 hover:text-gray-500"
 								>
+									{person.xUrl ? (
+										<>
 									<span className="sr-only">X</span>
 									<svg
 										className="h-5 w-5"
@@ -54,6 +56,13 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
 									>
 										<path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
 									</svg>
+										</>
+									): (
+										<>
+									<span className="sr-only">GitHub</span>
+									<svg  width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>								
+									</>
+									)}
 								</a>
 							</li>
 							<li>

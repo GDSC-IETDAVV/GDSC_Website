@@ -38,3 +38,11 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #34a853;
 }
+
+.blurback {
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+.margintop {
+  margin-top: 8rem !important;
+}

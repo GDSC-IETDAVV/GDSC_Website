@@ -16,7 +16,7 @@ const Navbar = () => {
     },
     {
       title: "Events",
-      href: "#events",
+      href: "/events",
     },
     {
       title: "About",
@@ -25,6 +25,10 @@ const Navbar = () => {
     {
       title: "Tech Stack",
       href: "#techstack",
+    },
+    {
+      title: "Team",
+      href: "/teams",
     },
     {
       title: "Contact",
@@ -62,7 +66,7 @@ const Navbar = () => {
       }}
       transition={{ duration: 2.5, ease: [0.76, 0, 0.24, 1], delay: -0.8 }}
     >
-      <div className="fixed flex justify-center w-full h-full bg-[black] text-[white] z-5">
+      <div className="fixed flex justify-center w-full h-full bg-[black] text-[white] z-5 backdrop-blur">
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-24 w-full mx-80 items-baseline h-max">
           <motion.p
             transition={{ delay: 0.5 }}

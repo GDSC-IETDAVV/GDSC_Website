@@ -18,7 +18,7 @@ const Hero = () => {
   community.`;
 
   return (
-    <div className="mt-36 flex flex-col lg:flex-row w-full justify-between pt-10 gap-24 lg:gap-0 items-center md:items-start sm:pt-0">
+    <div className="margintop flex flex-col lg:flex-row w-full justify-between pt-10 gap-24 lg:gap-0 items-center md:items-start sm:pt-0">
       {/* Left */}
       <div className="flex flex-col gap-10 w-full">
         <div className="flex flex-col gap-8 w-full">

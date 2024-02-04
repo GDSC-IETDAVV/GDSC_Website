@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { headerReveal } from "./animations";
 const Header = () => {
   return (
-    <div className="w-4/5 xl:w-2/3 flex justify-between items-center fixed z-20 h-auto">
+    <div className="w-4/5 xl:w-full flex justify-between items-center fixed z-20 h-auto blurback xl:px-[15%]">
       <motion.div
         variants={headerReveal}
         initial="initial"
