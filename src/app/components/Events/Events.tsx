@@ -8,9 +8,9 @@ const Events = () => {
       "eventName": "COD-A-THON",
       "eventDescription": "GDSC IET DAVV'S very own competitive programming competition which happened last year made students learn, grow and realize that 'Winning isn't everything, it's only thing'",
       "collabWith": [],
-      "date": "April 7, 2023",
-      "time": "EVENT_TIME_1",
-      "venue": "VENUE_1",
+      "date": "Apr 7, 2023",
+      "time": "1:00 PM",
+      "venue": "IET DAVV",
       "registrationUrl": "REGISTRATION_URL_1"
     },
     {
@@ -18,7 +18,7 @@ const Events = () => {
       "eventName": "TechUnleash",
       "eventDescription": "With the programming running in our veins and codes beating in our hearts, We the team GDSC IET DAVV encouraged students to join our club and gain knowledge about programming through our idea 'TechUnleash'.",
       "collabWith": [],
-      "date": "August 18, 2023",
+      "date": "Aug 18, 2023",
       "time": "3:00 -4:00 PM",
       "venue": "M Block Auditorium, IET DAVV",
       "registrationUrl": "http://bit.ly/gdsctechunleash"
@@ -28,8 +28,8 @@ const Events = () => {
       "eventName": "Google Cloud Facilitator Program 2023", 
       "eventDescription": "We provided a program to help students boost their career in cloud computing and AI. GDSC IET DAVV also provided access to full-fledged courses provided by Google, with many surprises and goodies!",
       "collabWith": [],
-      "date": "August 31, 2023",
-      "time": "EVENT_TIME_3",
+      "date": "Aug 31, 2023",
+      "time": "2:00 PM",
       "venue": "VENUE_3",
       "registrationUrl": "https://forms.gle/Bjtora7GyiKFtZCY7"
     },
@@ -38,7 +38,7 @@ const Events = () => {
       "eventName": "CodeQuest 2023",
       "eventDescription": "To let our students flex those coding muscles, we brought a coding contest. And guess what? It turned out to be an epic saga of coding events which gave us memories to remember and learning to never forget!",
       "collabWith": [],
-      "date": "September 21, 2023",
+      "date": "Sept 21, 2023",
       "time": "6:00 - 7:00 PM",
       "venue": "VENUE_4",
       "registrationUrl": "https://forms.gle/73iTZW591cAuyYd69"
@@ -48,7 +48,7 @@ const Events = () => {
       "eventName": "GDSC Volunteer meet-up",
       "eventDescription": "We believe that if there's a name it's because of the family. We couldn't be more grateful to our volunteers for always being there with us. And We showed them our respect and thankfulness by organizing a meet up with them. We had fun, made memories, and promised to stay and grow with GDSC IET DAVV.",
       "collabWith": [],
-      "date": "September 22, 2023",
+      "date": "Sept 22, 2023",
       "time": "2:00 PM",
       "venue": "Outside Library, IET DAVV",
       "registrationUrl": "https://forms.gle/N9zbd5oR2MAKr9YJ8"
@@ -67,8 +67,8 @@ const Events = () => {
           "url": "https://gdsc.community.dev/school-of-data-science-and-forecasting-indore/"
         }
       ],
-      "date": "October 7, 2023",
-      "time": "EVENT_TIME_6",
+      "date": "Oct 7, 2023",
+      "time": "12:00PM",
       "venue": "Google Meet",
       "registrationUrl": "https://gdsc.community.dev/j/skgky5g9nta7w/"
     },
@@ -77,7 +77,7 @@ const Events = () => {
       "eventName": "CODE SERIES",
       "eventDescription": "30 Day's coding session which made all of us say code like a pro, compile like a dope. Our students believed in their own selves and stood their grounds to achieve this challenge given by us. It was definitely a Proud moment for us to see our students believe in their coding ability!!",
       "collabWith": [],
-      "date": "November 10 - December 10, 2023",
+      "date": "Dec 10, 2023",
       "time": "EVENT_TIME_7",
       "venue": "Hackerrank",
       "registrationUrl": "https://forms.gle/Uu6SepjLG6ns8faV7"
