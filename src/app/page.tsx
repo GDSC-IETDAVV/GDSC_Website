@@ -8,7 +8,7 @@ import { useScrollBlock } from "@/utils/useScrollBlock";
 import Hero from "./components/Hero";
 import Communities from "./components/Communities";
 import Footer from "./components/Footer";
-import TechStack from "./components/TechStack";
+import TechStack from "./components/TechStack/Techstack";
 export default function Home() {
   const { isOpen, setIsOpen } = useAppState();
   const [blockScroll, allowScroll] = useScrollBlock();
