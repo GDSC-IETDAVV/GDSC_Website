@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-const MiddleCard = () => {
+
+interface cardType {
+  desc: string;
+  title: string;
+}
+
+const MiddleCard = ({desc, title} : cardType) => {
   return (
     // Rectangle
     <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
@@ -27,14 +33,11 @@ const MiddleCard = () => {
               alt="logo"
             />
           </div>
-          <div className="font-bold text-2xl sm:text-6xl">Tech Stack</div>
+          <div className="font-bold text-2xl sm:text-6xl">{title || "Tech Stack"}</div>
         </div>
         <div>
           <p className="text-justify text-sm sm:text-base">
-            We&#39;re built different, so we build different. Our mission is to
-            empower future developers by bringing students passionate about
-            technology together and helping them grow their skills in tech,
-            regardless of background.
+            {desc}
           </p>
         </div>
       </motion.div>

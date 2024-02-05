@@ -13,27 +13,31 @@ const Navbar = () => {
 	};
 	const { isOpen, setIsOpen } = useAppState();
 	const items = [
-		{
-			title: "Home",
-			href: "/",
-		},
-		{
-			title: "Events",
-			href: "#events",
-		},
-		{
-			title: "About",
-			href: "#about",
-		},
-		{
-			title: "Tech Stack",
-			href: "#techstack",
-		},
-		{
-			title: "Contact",
-			href: "#contact",
-		},
-	];
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "Events",
+      href: "/events",
+    },
+    {
+      title: "About",
+      href: "/#about",
+    },
+    {
+      title: "Tech Stack",
+      href: "/#techstack",
+    },
+    {
+      title: "Team",
+      href: "/teams",
+    },
+    {
+      title: "Contact",
+      href: "/#contact",
+    },
+  ];
 	const x = window.innerWidth / 3;
 	const y = window.innerHeight / 3;
 	const maskSize = isOpen ? 2800 : 0;

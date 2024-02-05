@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.2",
-    "framer-motion": "^10.17.9",
+    "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "next": "14.0.4",
     "react": "^18",
