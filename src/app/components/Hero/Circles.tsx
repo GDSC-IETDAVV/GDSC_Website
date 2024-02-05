@@ -69,9 +69,9 @@ const Circles = () => {
             custom={5}
             className="flex flex-col gap-1 items-center justify-center"
           >
-            <span className="text-white font-extrabold text-6xl">20+</span>
+            <span className="text-white font-extrabold text-6xl">60+</span>
             <span className="text-white font-medium text-sm text-center">
-              Events hosted in community
+              Swags distributed in community
             </span>
           </motion.div>
         </div>
