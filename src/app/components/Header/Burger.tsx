@@ -70,13 +70,13 @@ const Burger = () => {
           <div className="w-[6px] h-[6px] bg-black absolute rounded-full top-[80%] left-[50%] scale-0 -translate-x-[50%] transition-transform duration-200 ease-[cubic-bezier(0.76, 0, 0.24, 1)] group-hover:scale-100 group-hover:-translate-x-[50%]"></div>
         </div>
         <div className="flex relative p-4 group cursor-pointer">
-          <Link href="#about" scroll={true}>
-            <p>About</p>
+          <Link href="/teams" scroll={true}>
+            <p>Team</p>
           </Link>
           <div className="w-[6px] h-[6px] bg-black absolute rounded-full top-[80%] left-[50%] scale-0 -translate-x-[50%] transition-transform duration-200 ease-[cubic-bezier(0.76, 0, 0.24, 1)] group-hover:scale-100 group-hover:-translate-x-[50%]"></div>
         </div>
         <div className="flex relative p-4 group cursor-pointer">
-          <Link href="#contact" scroll={true}>
+          <Link href="/#contact" scroll={true}>
             <p>Contact</p>
           </Link>
           <div className="w-[6px] h-[6px] bg-black absolute rounded-full top-[80%] left-[50%] scale-0 -translate-x-[50%] transition-transform duration-200 ease-[cubic-bezier(0.76, 0, 0.24, 1)] group-hover:scale-100 group-hover:-translate-x-[50%]"></div>

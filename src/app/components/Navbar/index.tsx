@@ -27,6 +27,10 @@ const Navbar = () => {
       href: "/#techstack",
     },
     {
+      title: "Team",
+      href: "/teams",
+    },
+    {
       title: "Contact",
       href: "/#contact",
     },
