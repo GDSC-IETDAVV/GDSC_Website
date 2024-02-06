@@ -28,7 +28,7 @@ const NormalCard: React.FC<NormalCardParams> = ({
         },
       }}
       className={
-        "flex flex-col gap-8 border border-black rounded-xl pb-5 h-max w-[300px] sm:w-[256px] min-h-80 relative"
+        "flex flex-col gap-8 border border-black rounded-xl pb-5 h-max w-[300px] sm:w-full min-h-80 relative"
       }
     >
       {/* <div
