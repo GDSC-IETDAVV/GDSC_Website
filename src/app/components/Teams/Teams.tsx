@@ -1,16 +1,17 @@
 import TeamCards from "./TeamCards";
-
+import Image from "next/image";
 const faculty_advisor = [
   {
     name: "Vaibhav Jain",
     role: "GDSC Faculty Advisor",
-    imageUrl: "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707244174/vjsirimg_amfjkz.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707244174/vjsirimg_amfjkz.jpg",
     // write bio for experienced faculty advisor
     bio: "I am a highly motivated and dynamic individual, with a buoyant approach to take on challenging projects right from concept all the way to completion, focused on creating software solutions which are highly efficient, scalable and up to snuff with the modern standards.\n\nAs an avid problem-solver, I relish the opportunity to confront challenges head-on and discover creative solutions that drive meaningful change. My conscientious view and strong analytical skills allow me to deduce complex problems and find areas for refinement. An effective communicator with great interpersonal skills and a friendly nature, I thrive to work on cross-functional teams focused on bringing visions to reality.\n\nI'm constantly eager to broaden my horizons and acquire new skills. Feel free to connect with me so we can share our experiences and contribute towards a more sustainable and prosperous world.",
-    xUrl: "#",
-    linkedinUrl: "#",
+    xUrl: null,
+    linkedinUrl: "https://www.linkedin.com/in/vaibhavjainietdavv/",
   },
-]
+];
 
 const mentors = [
   {
@@ -127,7 +128,8 @@ const leads = [
   {
     name: "Anuj Malviya",
     role: "AI & ML Lead",
-    imageUrl: "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707158248/anujimg_mibf25.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707158248/anujimg_mibf25.jpg",
     bio: "Hi it's Anuj, I'm also MLSA of IET DAVV, navigating the exciting realms of technology. My passion lies in crafting innovative solutions through Python Automations, Machine Learning .In my spare time I like to practice Oragami, play chess,I’m always down for hearing about new projects, so feel free to drop me a line.",
     githubUrl: "https://github.com/Anuj-malviya0",
     linkedinUrl: "https://www.linkedin.com/in/anuj-malviya-a531b4204/",
@@ -143,7 +145,8 @@ const leads = [
   {
     name: "Atharva Sugandhi",
     role: "DSA & CP Lead",
-    imageUrl: "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707242591/athvimg_z5qwfu.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707242591/athvimg_z5qwfu.jpg",
     bio: "I'm Atharva Sugandhi, a Software Developer specializing in mastering Data Structures and Algorithms. My passion lies in tackling complex coding puzzles with efficiency. Alongside, I excel in crafting engaging web experiences using React.",
     githubUrl: "https://github.com/Atom-Atharva",
     linkedinUrl: "https://www.linkedin.com/in/atharva-sugandhi-391a4b225/",
@@ -178,7 +181,8 @@ const leads = [
   {
     name: "Insiya Husain",
     role: "Flutter and Content Lead",
-    imageUrl: "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707158237/insiyaimg_jeeguc.jpg",
+    imageUrl:
+      "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707158237/insiyaimg_jeeguc.jpg",
     bio: "I love connecting the dots whether it's blending ideas from different fields, bringing people from diverse teams together, or combining applications from various industries. I enjoy being a Flutter Developer, plus I'm always exploring the exciting world of AI for new insights. I also enjoy sharing my thoughts through blogs, diving into the latest trends in robotics and AI. Beyond my technical skills, I firmly believe in the transformative power of self-development.",
     githubUrl: "https://github.com/Insiyaya",
     linkedinUrl: "https://www.linkedin.com/in/insiya-husain-89b501259?",
@@ -186,7 +190,8 @@ const leads = [
   {
     name: "Arunima Agrawal",
     role: "Management Lead and Social Media Lead",
-    imageUrl: "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707240940/arunimaimg_pdn4cu.png",
+    imageUrl:
+      "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707240940/arunimaimg_pdn4cu.png",
     bio: "My journey is defined by a commitment to excellence, innovation, and knowledge in the sphere of tech. I'm a web developer who loves creating cool things online. Currently, I'm exploring data science to learn some new tricks. I'm also good at managing projects to keep everything running smoothly.",
     githubUrl: "https://github.com/ArunimaAgrawal",
     linkedinUrl: "https://www.linkedin.com/in/arunima-agrawal-881479226",
@@ -195,14 +200,31 @@ const leads = [
 
 export default function Teams() {
   return (
-    <div className="bg-white py-16 md:py-24 lg:py-32 pt-40">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8">
-        <div className="space-y-10">
-          <TeamCards people={faculty_advisor} title="Faculty Advisor" />
-          <TeamCards people={mentors} title="Mentors" />
-          <TeamCards people={leads} title="Leads" />
+    <>
+      <div className="bg-white py-16 md:py-24 lg:py-32 pt-40">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8">
+          <div className="space-y-10">
+            <TeamCards people={faculty_advisor} title="Faculty Advisor" />
+            <TeamCards people={mentors} title="Mentors" />
+            <TeamCards people={leads} title="Leads" />
+          </div>
         </div>
       </div>
-    </div>
+      <div className="flex lg:flex-col flex-col items-center justify-center gap-2 lg:gap-6">
+        <h2 className="text-xl md:text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-3 w-max lg:w-max">
+          Thanks Everyone
+        </h2>
+        <Image
+          src={"/groupPhoto2.jpg"}
+          alt="group-photo"
+          sizes="(min-width: 768px) 50vw,
+            (max-width: 768px) 100vw,
+            100vw"
+          width={1000}
+          height={1000}
+          className="rounded-lg"
+        />
+      </div>
+    </>
   );
 }
