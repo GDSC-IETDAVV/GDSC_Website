@@ -10,7 +10,7 @@ const TechStack = () => {
   }, [w]);
   return (
     <div id="domains">
-      {w >= 1280 ? (
+      {w >= 640 ? (
         // <div
         //   className="flex flex-col gap-16 pt-24"
         //   style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
@@ -75,7 +75,7 @@ const TechStack = () => {
             <div className="flex flex-row flex-wrap gap-12 justify-center w-full">
               {data.slice(0, 9).map((item, index) => {
                 return (
-                  <div className="" key={index}>
+                  <div className="w-full sm:w-[40%]" key={index}>
                     <NormalCard
                       name={item.names}
                       stack={item.stack}
