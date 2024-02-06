@@ -1,5 +1,16 @@
-import Image from "next/image";
 import TeamCards from "./TeamCards";
+
+const faculty_advisor = [
+  {
+    name: "Vaibhav Jain",
+    role: "GDSC Faculty Advisor",
+    imageUrl: "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707244174/vjsirimg_amfjkz.jpg",
+    // write bio for experienced faculty advisor
+    bio: "I am a highly motivated and dynamic individual, with a buoyant approach to take on challenging projects right from concept all the way to completion, focused on creating software solutions which are highly efficient, scalable and up to snuff with the modern standards.\n\nAs an avid problem-solver, I relish the opportunity to confront challenges head-on and discover creative solutions that drive meaningful change. My conscientious view and strong analytical skills allow me to deduce complex problems and find areas for refinement. An effective communicator with great interpersonal skills and a friendly nature, I thrive to work on cross-functional teams focused on bringing visions to reality.\n\nI'm constantly eager to broaden my horizons and acquire new skills. Feel free to connect with me so we can share our experiences and contribute towards a more sustainable and prosperous world.",
+    xUrl: "#",
+    linkedinUrl: "#",
+  },
+]
 
 const mentors = [
   {
@@ -177,6 +188,7 @@ export default function Teams() {
     <div className="bg-white py-16 md:py-24 lg:py-32 pt-40">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8">
         <div className="space-y-10">
+          <TeamCards people={faculty_advisor} title="Faculty Advisor" />
           <TeamCards people={mentors} title="Mentors" />
           <TeamCards people={leads} title="Leads" />
         </div>
