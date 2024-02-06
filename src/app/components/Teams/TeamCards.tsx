@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 interface cardArray {
   name: string;
   role: string;
@@ -27,7 +27,7 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
       >
         {people.map((person) => (
           <li key={person.name}>
-            <Image
+            <img
               className="aspect-[1/1] w-full rounded-2xl object-cover object-center"
               src={person.imageUrl}
               alt={person.name}
