@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 import { headingReveal } from "./animations";
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
   const reachRef = useRef(null);
   const footerRef = useRef(null);
@@ -89,7 +90,7 @@ const Footer = () => {
               //     : {}
               // }
             >
-              About
+              <Link href={"/#about"}>About</Link>
             </motion.span>
             <motion.span
               className="opacity-0"
@@ -103,7 +104,7 @@ const Footer = () => {
               }}
               viewport={{ once: true }}
             >
-              Tech Stack
+              <Link href="/#domains">Domains</Link>
             </motion.span>
             <motion.span
               className="opacity-0"
