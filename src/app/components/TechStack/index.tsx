@@ -75,14 +75,13 @@ const TechStack = () => {
             <div className="flex flex-row flex-wrap gap-12 justify-center w-full">
               {data.slice(0, 9).map((item, index) => {
                 return (
-                  <div className="">
+                  <div className="" key={index}>
                     <NormalCard
                       name={item.names}
                       stack={item.stack}
                       custom={index}
                       color={item.color}
                       desc={item.desc}
-                      key={index}
                     />
                   </div>
                 );
