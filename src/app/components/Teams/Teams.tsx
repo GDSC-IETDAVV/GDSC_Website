@@ -70,6 +70,24 @@ const mentors = [
 ];
 const leads = [
   {
+    name: "Manas Bhandari",
+    role: "GDSC Lead 23-24",
+    imageUrl:
+      "https://media.licdn.com/dms/image/D4D03AQGQKN5PAz9hhA/profile-displayphoto-shrink_800_800/0/1701467825493?e=1712793600&v=beta&t=4dgSBHz9budxjDrY1NKHkYjqRbQN5xjMwzDzBJb1LPg",
+    bio: "Highly motivated and results-oriented, I am a B.Tech graduate in Information Technology from IET DAVV. As the founder of ASKGURU, I have developed a platform that connects individuals with mentors in real-time, offering counseling and solutions for day-to-day issues. My experience lies in building full-stack web applications utilizing technologies such as ReactJS, NodeJS, ExpressJS, MongoDB, and SQL. I possess a proven ability to swiftly learn new technologies and implement them effectively in practical projects. Additionally, I excel in communication and teamwork, enabling seamless collaboration and efficient project delivery.",
+    xUrl: "https://twitter.com/manasjain06",
+    linkedinUrl: "https://www.linkedin.com/in/manas0609/",
+  },
+  {
+    name: "Tanmay Bhadviya",
+    role: "Co-Lead",
+    imageUrl:
+      "https://media.licdn.com/dms/image/D4D03AQHnUYKm57LANw/profile-displayphoto-shrink_200_200/0/1701607424425?e=1712188800&v=beta&t=7aakWDu3zv1csWDjFvhUpAMv9xes5-k09CvjhJOrHN4",
+    bio: "I have a open minded sense of growth and support, I love to volunteer and contribute to field of my interest and would like to explore more! I have ample of experience in ML, Coding with Python and C++, Graphic Designing, flutter, UI/UX. I share interests in Problem solving, Designing solutions and much more.",
+    xUrl: "https://twitter.com/TanmayBhadviya",
+    linkedinUrl: "https://www.linkedin.com/in/tanmaybhadviya/",
+  },
+  {
     name: "Kanishk Tiwari",
     role: "Full-stack and UI/UX lead",
     imageUrl: "https://avatars.githubusercontent.com/u/72643990?v=4",
@@ -94,15 +112,7 @@ const leads = [
     xUrl: "https://www.x.com/AasirwalMohit",
     linkedinUrl: "https://www.linkedin.com/in/mohit-aasirwal-478466223/",
   },
-  {
-    name: "Tanmay Bhadviya",
-    role: "Co-Lead",
-    imageUrl:
-      "https://media.licdn.com/dms/image/D4D03AQHnUYKm57LANw/profile-displayphoto-shrink_200_200/0/1701607424425?e=1712188800&v=beta&t=7aakWDu3zv1csWDjFvhUpAMv9xes5-k09CvjhJOrHN4",
-    bio: "I have a open minded sense of growth and support, I love to volunteer and contribute to field of my interest and would like to explore more! I have ample of experience in ML, Coding with Python and C++, Graphic Designing, flutter, UI/UX. I share interests in Problem solving, Designing solutions and much more.",
-    xUrl: "https://twitter.com/TanmayBhadviya",
-    linkedinUrl: "https://www.linkedin.com/in/tanmaybhadviya/",
-  },
+
   {
     name: "Anuj Malviya",
     role: "AI & ML Lead",

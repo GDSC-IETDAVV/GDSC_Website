@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 interface cardArray {
   name: string;
   role: string;
@@ -27,7 +27,7 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
       >
         {people.map((person) => (
           <li key={person.name}>
-            <img
+            <Image
               className="aspect-[1/1] w-full rounded-2xl object-cover object-center"
               src={person.imageUrl}
               alt={person.name}
@@ -39,7 +39,7 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
             {/* <p className="mt-4 text-base leading-7 text-gray-600 text-justify">
 							{person.bio}
 						</p> */}
-            <ul role="list" className="mt-6 flex gap-x-6">
+            <ul role="list" className="mt-6 flex gap-x-6 items-center">
               <li>
                 <a
                   href={person.xUrl ? person.xUrl : person.githubUrl}
@@ -49,7 +49,7 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
                     <>
                       <span className="sr-only">X</span>
                       <svg
-                        className="h-5 w-5"
+                        className="h-6 w-6"
                         aria-hidden="true"
                         fill="currentColor"
                         viewBox="0 0 20 20"
@@ -79,7 +79,7 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
                 >
                   <span className="sr-only">LinkedIn</span>
                   <svg
-                    className="h-5 w-5"
+                    className="h-6 w-6"
                     aria-hidden="true"
                     fill="currentColor"
                     viewBox="0 0 20 20"

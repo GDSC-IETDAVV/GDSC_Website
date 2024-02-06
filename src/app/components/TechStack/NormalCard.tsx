@@ -1,10 +1,12 @@
 import React from "react";
 import { color, motion } from "framer-motion";
+import Image from "next/image";
 interface NormalCardParams {
   name: Array<string>;
   stack: string;
   color: string;
   desc: string;
+  logo: string;
   custom: number;
 }
 const NormalCard: React.FC<NormalCardParams> = ({
@@ -12,6 +14,7 @@ const NormalCard: React.FC<NormalCardParams> = ({
   stack,
   color,
   desc,
+  logo,
   custom,
 }) => {
   const ind = custom;
@@ -28,7 +31,7 @@ const NormalCard: React.FC<NormalCardParams> = ({
         },
       }}
       className={
-        "flex flex-col gap-8 border border-black rounded-xl pb-5 h-max w-[300px] sm:w-full min-h-80 relative"
+        "flex flex-col gap-8 border border-black rounded-xl pb-5 h-full w-[300px] sm:w-full min-h-80 relative"
       }
     >
       {/* <div
@@ -36,7 +39,13 @@ const NormalCard: React.FC<NormalCardParams> = ({
           "absolute w-full h-8 rounded-tl-lg rounded-tr-lg bg-[#4285F4]"
         }
       ></div> */}
-      <div className="flex flex-col gap-10 sm:gap-8 justify-between items-center mt-4">
+      <div className="flex flex-col gap-10 sm:gap-6 justify-between items-center mt-4 py-4">
+        <Image
+          src={"/domain-images/" + logo}
+          alt="logo"
+          width={80}
+          height={80}
+        />
         <div className="text-xl sm:text-2xl font-bold text-center w-min sm:[line-height:1.3] [line-height:1]">
           {stack}
         </div>

@@ -85,6 +85,7 @@ const TechStack = () => {
                       custom={index}
                       color={item.color}
                       desc={item.desc}
+                      logo={item.src}
                     />
                   </div>
                 );
@@ -119,6 +120,7 @@ const TechStack = () => {
                   color={item.color}
                   custom={index}
                   desc={item.desc}
+                  logo={item.src}
                   key={index}
                 />
               );

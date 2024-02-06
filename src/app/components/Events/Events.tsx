@@ -91,7 +91,7 @@ const Events = () => {
         "30 Day's coding session which made all of us say code like a pro, compile like a dope. Our students believed in their own selves and stood their grounds to achieve this challenge given by us. It was definitely a Proud moment for us to see our students believe in their coding ability!!",
       collabWith: [],
       date: "Dec 10, 2023",
-      time: "EVENT_TIME_7",
+      time: "--",
       venue: "Hackerrank",
       registrationUrl: "https://forms.gle/Uu6SepjLG6ns8faV7",
     },

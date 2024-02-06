@@ -62,7 +62,7 @@ const EventCard = ({
     >
       <div className="mx-auto px-5">
         <div className="max-w-xs cursor-pointer rounded-lg bg-white p-2 shadow duration-150 hover:scale-105 hover:shadow-md pb-6">
-          <img
+          <Image
             className="w-full rounded-lg object-cover object-center"
             src={imageUrl}
             alt={eventName}
