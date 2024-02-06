@@ -72,10 +72,13 @@ const TechStack = () => {
               {/* <MiddleCard /> */}
               <DomainDesc />
             </div>
-            <div className="flex flex-row flex-wrap gap-12 justify-center w-full">
+            <div className="flex flex-row flex-wrap gap-12 justify-center w-full py-4">
               {data.slice(0, 9).map((item, index) => {
                 return (
-                  <div className="w-full sm:w-[40%]" key={index}>
+                  <div
+                    className="w-full sm:w-[40%] duration-150 hover:scale-105 hover:shadow-md "
+                    key={index}
+                  >
                     <NormalCard
                       name={item.names}
                       stack={item.stack}
