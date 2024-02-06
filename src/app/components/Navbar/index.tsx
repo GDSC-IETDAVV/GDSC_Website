@@ -23,8 +23,8 @@ const Navbar = () => {
       href: "/#about",
     },
     {
-      title: "Tech Stack",
-      href: "/#techstack",
+      title: "Domains",
+      href: "/#domains",
     },
     {
       title: "Team",

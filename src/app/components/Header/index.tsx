@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Burger from "./Burger";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { headerReveal } from "./animations";
 const Header = () => {
@@ -12,7 +13,9 @@ const Header = () => {
         animate="open"
         exit="closed"
       >
-        <Image src={"/logo.svg"} width={180} height={30} alt="logo" />
+        <Link href="/">
+          <Image src={"/logo.svg"} width={180} height={30} alt="logo" />
+        </Link>
       </motion.div>
       <motion.div
         variants={headerReveal}

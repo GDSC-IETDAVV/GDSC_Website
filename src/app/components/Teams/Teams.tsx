@@ -31,7 +31,7 @@ const mentors = [
     name: "Kunal Sangtiani",
     role: "GDSC mentor",
     imageUrl:
-      "https://media.licdn.com/dms/image/D4D03AQHCK6_hSLVIsg/profile-displayphoto-shrink_800_800/0/1693984109714?e=1712793600&v=beta&t=QwFP2qXnk3dnqckfvWiDVAA6kf1a7rbm53CqLsLtzII",
+      "https://media.licdn.com/dms/image/D4D03AQGy3TvNe63MGQ/profile-displayphoto-shrink_200_200/0/1707193529931?e=2147483647&v=beta&t=3IKyIjAOAMCV3fbbCJMRIwM-uObn8uPNAcukvSYDF2o",
     bio: "Web Development:\nFront-End Technologies: HTML, CSS, Sass, Javascript, Next Js, React/Redux/Thunk/Saga, Material UI, Tailwind CSS\nBack-End Technologies & Frameworks: Django, Flask, Node Js, Express, Firebase, RESTful APIs\nTools: Git/Github, WordPress, VSC.\nProgramming Languages: C/C++, Javascript, Typescript, Python, Solidity.\nBlockchain: Hardhat, IPFS, Moralis, The Graph.\n\nCompetitive Programming | Specialist on Codeforces(1400+) | CodeChef: 4⭐ (Max: 1878) |\n\nProficient in Adobe Creative Suite.\nAdobe Photoshop | Adobe Illustrator\n\nWebsite: www.kunaldev.tech\nEmail: ksangtiani13@gmail.com\nGithub: https://github.com/kunals131",
     linkedinUrl: "https://linkedin.com/in/kunal-sangtiani-4373581bb",
   },
@@ -74,7 +74,7 @@ const leads = [
     role: "Full-stack and UI/UX lead",
     imageUrl: "https://avatars.githubusercontent.com/u/72643990?v=4",
     bio: "I specialize in fullstack web development, demonstrating proficiency in Next.js with libraries like Three.js, Babylon.js along with MongoDB, Express, and Node.js at the backend. Prior to this, I had a strong foundation in 3D modeling, utilizing tools like Blender and Unity. My creative journey expanded in creating and enhancing visual content, which includes UI/UX design, photo and video editing. This diverse background equips me with a unique skill set, allowing me to seamlessly blend creative design with technical implementation.",
-    githubUrl: "github.com/kanishk6103",
+    githubUrl: "https://www.github.com/kanishk6103",
     linkedinUrl: "https://www.linkedin.com/in/kanishk6103/",
   },
   {
