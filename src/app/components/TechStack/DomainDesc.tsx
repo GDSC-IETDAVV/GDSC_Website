@@ -24,10 +24,11 @@ const DomainDesc = () => {
               src={"/gdscLogoOnly.svg"}
               width={56}
               height={40}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               alt="logo"
             />
           </div>
-          <div className="font-bold text-2xl sm:text-6xl px-4">Domains</div>
+          <div className="font-bold text-3xl sm:text-6xl px-4">Domains</div>
         </div>
         <div className="w-full">
           <p className="text-center text-sm sm:text-base">
