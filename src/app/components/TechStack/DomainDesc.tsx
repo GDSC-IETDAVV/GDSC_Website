@@ -18,15 +18,9 @@ const DomainDesc = () => {
         className="flex flex-col gap-8 sm:w-[100%] h-max p-8 items-center"
       >
         {/* Text and Logo */}
-        <div className="flex flex-row gap-4 items-center">
-          <div>
-            <Image
-              src={"/gdscLogoOnly.svg"}
-              width={56}
-              height={40}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              alt="logo"
-            />
+        <div className="flex flex-row gap-1 sm:gap-4 items-center">
+          <div className="w-12 h-8 sm:w-14 sm:h-10 relative">
+            <Image src={"/gdscLogoOnly.svg"} fill={true} alt="logo" />
           </div>
           <div className="font-bold text-3xl sm:text-6xl px-4">Domains</div>
         </div>
