@@ -20,7 +20,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/C5603AQElYSBhJF4mXA/profile-displayphoto-shrink_800_800/0/1576940245102?e=1712793600&v=beta&t=fklLvV5ERriWcFZyu-qkjFTNajA2Yu5PjKIw1E0LbMk",
     bio: "I'm a motivated and dynamic individual, with a buoyant approach to take on challenging projects right from concept all the way to completion, focused on creating software solutions which are highly efficient, scalable and up to snuff with the modern standards.\n\nAs an avid problem-solver, I relish the opportunity to confront challenges head-on and discover creative solutions that drive meaningful change. My conscientious view and strong analytical skills allow me to deduce complex problems and find areas for refinement. An effective communicator with great interpersonal skills and a friendly nature, I thrive to work on cross-functional teams focused on bringing visions to reality.\n\nI'm constantly eager to broaden my horizons and acquire new skills. Feel free to connect with me so we can share our experiences and contribute towards a more sustainable and prosperous world.",
-    xUrl: "#",
+    xUrl: null,
     linkedinUrl: "linkedin.com/in/antrikshtyagi",
   },
   {
@@ -197,14 +197,14 @@ const leads = [
     linkedinUrl: "https://www.linkedin.com/in/arunima-agrawal-881479226",
   },
   {
-		name: "Ayush Mishra",
-		role: "Cloud Lead",
-		imageUrl:
-			"https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707284513/ayushimg_oz2wua.jpg",
-		bio: "I'm an aspiring WEB-APP Developer.I am now practicing DSA with LeetCode in C++. I am well-versed in Computer Science Fundamentals OOPS in JAVA, C++, and Python; Panda Libraries; and MATplotlib. Proficient in a variety of tech stacks, including React.JS, Kotlin, Docker, GCP ",
-		xUrl: "https://twitter.com/AyushMi19237224",
-		linkedinUrl: "https://www.linkedin.com/in/ayush-mishra-6812b6239/",
-	},
+    name: "Ayush Mishra",
+    role: "Cloud Lead",
+    imageUrl:
+      "https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707284513/ayushimg_oz2wua.jpg",
+    bio: "I'm an aspiring WEB-APP Developer.I am now practicing DSA with LeetCode in C++. I am well-versed in Computer Science Fundamentals OOPS in JAVA, C++, and Python; Panda Libraries; and MATplotlib. Proficient in a variety of tech stacks, including React.JS, Kotlin, Docker, GCP ",
+    xUrl: "https://twitter.com/AyushMi19237224",
+    linkedinUrl: "https://www.linkedin.com/in/ayush-mishra-6812b6239/",
+  },
 ];
 
 export default function Teams() {
