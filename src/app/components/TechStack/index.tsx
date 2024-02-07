@@ -85,6 +85,7 @@ const TechStack = () => {
                       custom={index}
                       color={item.color}
                       desc={item.desc}
+                      logo={item.src}
                     />
                   </div>
                 );
@@ -109,7 +110,10 @@ const TechStack = () => {
           className="flex flex-col gap-16 pt-24 lg:justify-center lg:items-center"
           style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
         >
-          <MiddleCard />
+          {/* <MiddleCard /> */}
+          <div className="w-full flex items-center justify-center">
+            <DomainDesc />
+          </div>
           <div className="flex flex-col lg:flex-row lg:flex-wrap gap-6 justify-between items-center">
             {data.map((item, index) => {
               return (
@@ -119,6 +123,7 @@ const TechStack = () => {
                   color={item.color}
                   custom={index}
                   desc={item.desc}
+                  logo={item.src}
                   key={index}
                 />
               );

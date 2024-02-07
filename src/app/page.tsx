@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main
       className={
-        "flex flex-col items-center w-screen px-12 xl:px-60 sm:gap-[40vh] gap-[10vh] scroll-smooth"
+        "flex flex-col items-center w-screen px-12 xl:px-60 sm:gap-[10vh] gap-[5vh] scroll-smooth"
       }
     >
       <Header />

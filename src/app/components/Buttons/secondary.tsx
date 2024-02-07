@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
 const SecondaryButton = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -16,14 +17,16 @@ const SecondaryButton = () => {
         setIsHovered(false);
       }}
     >
-      <div
-        className={
-          "uppercase px-2 py-0.5 font-medium " +
-          (isHovered ? "text-black" : "text-white")
-        }
-      >
-        ONGOING EVENTS
-      </div>
+      <Link href="https://gdsc.community.dev/events/details/developer-student-clubs-institute-of-engineering-and-technology-davv-indore-presents-moi-blockchain-dev-x-bootcamp/">
+        <div
+          className={
+            "uppercase px-2 py-0.5 font-medium " +
+            (isHovered ? "text-black" : "text-white")
+          }
+        >
+          ONGOING EVENTS
+        </div>
+      </Link>
     </button>
   );
 };
