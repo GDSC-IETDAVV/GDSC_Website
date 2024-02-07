@@ -181,6 +181,15 @@ const leads = [
     githubUrl: "https://github.com/ArunimaAgrawal",
     linkedinUrl: "https://www.linkedin.com/in/arunima-agrawal-881479226",
   },
+  {
+		name: "Ayush Mishra",
+		role: "Cloud Lead",
+		imageUrl:
+			"https://res.cloudinary.com/dhwbs4kk2/image/upload/v1707284513/ayushimg_oz2wua.jpg",
+		bio: "I'm an aspiring WEB-APP Developer.I am now practicing DSA with LeetCode in C++. I am well-versed in Computer Science Fundamentals OOPS in JAVA, C++, and Python; Panda Libraries; and MATplotlib. Proficient in a variety of tech stacks, including React.JS, Kotlin, Docker, GCP ",
+		xUrl: "https://twitter.com/AyushMi19237224",
+		linkedinUrl: "https://www.linkedin.com/in/ayush-mishra-6812b6239/",
+	},
 ];
 
 export default function Teams() {
