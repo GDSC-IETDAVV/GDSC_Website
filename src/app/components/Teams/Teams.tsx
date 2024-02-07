@@ -21,7 +21,7 @@ const mentors = [
       "https://media.licdn.com/dms/image/C5603AQElYSBhJF4mXA/profile-displayphoto-shrink_800_800/0/1576940245102?e=1712793600&v=beta&t=fklLvV5ERriWcFZyu-qkjFTNajA2Yu5PjKIw1E0LbMk",
     bio: "I'm a motivated and dynamic individual, with a buoyant approach to take on challenging projects right from concept all the way to completion, focused on creating software solutions which are highly efficient, scalable and up to snuff with the modern standards.\n\nAs an avid problem-solver, I relish the opportunity to confront challenges head-on and discover creative solutions that drive meaningful change. My conscientious view and strong analytical skills allow me to deduce complex problems and find areas for refinement. An effective communicator with great interpersonal skills and a friendly nature, I thrive to work on cross-functional teams focused on bringing visions to reality.\n\nI'm constantly eager to broaden my horizons and acquire new skills. Feel free to connect with me so we can share our experiences and contribute towards a more sustainable and prosperous world.",
     xUrl: null,
-    linkedinUrl: "linkedin.com/in/antrikshtyagi",
+    linkedinUrl: "https://www.linkedin.com/in/antrikshtyagi",
   },
   {
     name: "Ashwath Arora",
@@ -29,7 +29,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4D03AQFd5J1AMMDfQA/profile-displayphoto-shrink_800_800/0/1673187205409?e=1712793600&v=beta&t=rKvc1qW2Ue7potOmAKyNmhY0jbJiwtdynNL10jy01-s",
     bio: "",
-    linkedinUrl: "https://linkedin.com/in/ashwath-arora-a14aa1222",
+    linkedinUrl: "https://www.linkedin.com/in/ashwath-arora-a14aa1222",
   },
   {
     name: "Deepak Patil",
@@ -37,7 +37,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4D03AQExy-ynXWUWXA/profile-displayphoto-shrink_800_800/0/1704113731411?e=1712793600&v=beta&t=zbHgJBSFiEx-eYxyR2II3JRcd7lDYWn5-E0KPi6nJtM",
     bio: 'Greetings! I\'m Deepak Patil, a highly motivated technologist with a strong foundation in Computer Science. I have a stellar CGPA of 9.11/10 from the Institute of Engineering & Technology DAVV, Indore.\n\nMy expertise spans multiple programming languages, and I excel in full-stack web development using MERN. I\'ve led successful projects like "Yaadein," capturing cherished memories, and "Your Society," streamlining community management.\n\nLet\'s connect and create innovative solutions together!\n#FullStackDeveloper #MERNStack #Innovator',
-    linkedinUrl: "https://linkedin.com/in/deepakkpatil",
+    linkedinUrl: "https://www.linkedin.com/in/deepakkpatil",
   },
   {
     name: "Kunal Sangtiani",
@@ -45,7 +45,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4D03AQGy3TvNe63MGQ/profile-displayphoto-shrink_200_200/0/1707193529931?e=2147483647&v=beta&t=3IKyIjAOAMCV3fbbCJMRIwM-uObn8uPNAcukvSYDF2o",
     bio: "Web Development:\nFront-End Technologies: HTML, CSS, Sass, Javascript, Next Js, React/Redux/Thunk/Saga, Material UI, Tailwind CSS\nBack-End Technologies & Frameworks: Django, Flask, Node Js, Express, Firebase, RESTful APIs\nTools: Git/Github, WordPress, VSC.\nProgramming Languages: C/C++, Javascript, Typescript, Python, Solidity.\nBlockchain: Hardhat, IPFS, Moralis, The Graph.\n\nCompetitive Programming | Specialist on Codeforces(1400+) | CodeChef: 4⭐ (Max: 1878) |\n\nProficient in Adobe Creative Suite.\nAdobe Photoshop | Adobe Illustrator\n\nWebsite: www.kunaldev.tech\nEmail: ksangtiani13@gmail.com\nGithub: https://github.com/kunals131",
-    linkedinUrl: "https://linkedin.com/in/kunal-sangtiani-4373581bb",
+    linkedinUrl: "https://www.linkedin.com/in/kunal-sangtiani-4373581bb",
   },
   {
     name: "Pratham Rasal",
@@ -53,7 +53,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4E03AQHZb9Z9TAzVPQ/profile-displayphoto-shrink_800_800/0/1692201422161?e=1712793600&v=beta&t=JgFk0XtmAGeYaeA_zlaidKkwwBjazG8tK1S9kTfAXPQ",
     bio: "This is ME, Pratham Rasal, a Final year undergraduate from Institute of engineering & technology, DAVV Indore.\n\nProgramming Languages: Python, Javascript (ES5/ES6), C/C++\nBack-End Technologies & Databases: Node.js, Express, MongoDB, SQL, Flask, Restful APIs, AWS, Google Firebase\nFront-End Technologies: React.Js, Next.Js, HTML5, CSS3, Redux/Thunk, Zustand\nArtificial Intelligence & Machine Learning: Pandas, Scikit-Learn, OpenCV, Numpy, Matplotlib, Tensorflow\nTools: VSC, Jupyter, Git/Github\n\nWebsite: www.prathamrasal.tech\nGithub: www.github.com/prathamrasal\nEmail: prathamrasal6@gmail.com",
-    linkedinUrl: "https://linkedin.com/in/prathamrasal",
+    linkedinUrl: "https://www.linkedin.com/in/prathamrasal",
   },
   {
     name: "Sanjay Singh Rajpoot",
@@ -61,7 +61,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4D03AQElwZhUk72DPA/profile-displayphoto-shrink_800_800/0/1694367731398?e=1712793600&v=beta&t=rTQF32cyoE45qjpu0t8uu-JREaoP7BPQiomUudKMu5k",
     bio: "I am a software developer and an Open Source enthusiast. I have been selected for various open-source programs such as Google Summer of Code (GSoC), Linux Foundation (LFX), and MLH. Being in various open-source programs I have gained experience in solving challenging problems and a critical thinking approach to new problems.\n\nWorking with different open-source organizations, I have experience in working on new features, shipping production-ready code, and working with large code bases. I am well versed in coordinating with various teams at different levels to ship a new feature in the least time",
-    linkedinUrl: "https://linkedin.com/in/sanjaysinghrajpoot",
+    linkedinUrl: "https://www.linkedin.com/in/sanjaysinghrajpoot",
   },
   {
     name: "Piyush Agrawal",
@@ -69,7 +69,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4D35AQFK6vyB3g0UeA/profile-framedphoto-shrink_800_800/0/1697196888374?e=1707757200&v=beta&t=9g_B-ZzALqwmNpK7rpMQedzJuR_fha_Dun3N1ozvxiM",
     bio: "As a computer engineering student at IET DAVV, Indore, I have a strong foundation in computer science and a passion for technology and problem-solving. I have maintained a high CGPA of 9.025/10 and completed relevant coursework in data structures, algorithms, software engineering, networks, and databases.\n\nI have also developed my skills in various programming languages and technologies, such as Javascript, C++, Java, React, Redux, Node, Express, MongoDB, SQL, Restful APIs, Spring, and SpringBoot. I have applied these skills in my professional and personal projects, such as working as a full-stack developer at Arch Labs and contributing to the Barclays Apply Simulator as a BA3 summer intern at Barclays.\n\nAdditionally, I have participated in numerous hackathons and coding competitions, where I have demonstrated my creativity and innovation. Some of my notable achievements include winning the Smart India Hackathon 2022 and the Singapore India Hackathon 2023, as well as being an Expert on CodeForces and a Knight on LeetCode.\n\nI am always eager to learn and grow, and I am open to opportunities where I can leverage my skills and contribute to impactful projects. I believe in the power of technology to solve complex problems and improve lives.",
-    linkedinUrl: "https://linkedin.com/in/p1yu5h0",
+    linkedinUrl: "https://www.linkedin.com/in/p1yu5h0",
   },
   {
     name: "Shivang Mishra",
@@ -77,7 +77,7 @@ const mentors = [
     imageUrl:
       "https://media.licdn.com/dms/image/D4D03AQG7M-rZ3yKtLA/profile-displayphoto-shrink_800_800/0/1683990109846?e=1712793600&v=beta&t=lMmJGgyXrOVD1g2hp5DYx8NhU1JnRRDhVrE3oIFs04k",
     bio: "I am a tech-savvy individual based in India, driven by a passion for learning and exploration. I possess expertise in full-stack development, data structures, and algorithms, and am currently expanding my knowledge in blockchain and web 3.0 technologies. I am highly adaptable and thrive in dynamic work environments, and I am also deeply interested in entrepreneurship and technology-based business ventures",
-    linkedinUrl: "linkedin.com/in/shivangm24",
+    linkedinUrl: "https://www.linkedin.com/in/shivangm24",
   },
 ];
 const leads = [
