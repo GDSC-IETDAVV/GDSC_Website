@@ -15,7 +15,7 @@ const DomainDesc = () => {
             delay: 2.5,
           },
         }}
-        className="flex flex-col gap-8 sm:w-[100%] h-max p-8 items-center"
+        className="flex flex-col gap-4 md:gap-8 sm:w-[100%] h-max p-8 items-center"
       >
         {/* Text and Logo */}
         <div className="flex flex-row gap-1 sm:gap-4 items-center">
