@@ -87,7 +87,7 @@ const Communities = () => {
         <div className="w-auto h-[20vh] md:h-[50vh]">
           <div className="w-auto h-full relative">
             <Image
-              src={"/group.png"}
+              src={"/felicitation-group-crop.jpg"}
               // width={56}
               // height={56}
               // layout="fill"
@@ -96,6 +96,7 @@ const Communities = () => {
               sizes="(min-width: 768px) 50vw,
             (max-width: 768px) 100vw,
             100vw"
+              className="rounded-lg"
               // objectFit="contain"
             />
             {/* <img
