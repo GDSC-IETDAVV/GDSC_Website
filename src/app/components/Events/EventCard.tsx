@@ -108,12 +108,21 @@ const EventCard = ({
                 </>
               ) : null}
             </div>
-            <Link
-              href={registrationUrl}
-              className="rounded-full bg-blue-500 px-4 py-2 text-xs font-semibold text-white mx-4"
-            >
-              Register Link
-            </Link>
+            {registrationUrl.length > 0 ? (
+              <Link
+                href={registrationUrl}
+                className="rounded-full bg-blue-500 px-4 py-2 text-xs font-semibold text-white mx-4"
+              >
+                Register Link
+              </Link>
+            ) : (
+              <Link
+                href={registrationUrl}
+                className="rounded-full bg-gray-500 px-4 py-2 text-xs font-semibold text-white mx-4"
+              >
+                Registration Closed
+              </Link>
+            )}
           </div>
         </div>
       </div>
