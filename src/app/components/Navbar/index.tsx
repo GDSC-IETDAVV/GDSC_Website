@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Item from "./Item";
 import { easeInOut, motion } from "framer-motion";
-import { NavAnimation, paragraphAnimation } from "./animations";
+import { NavAnimation, paragraphAnimation, headingReveal } from "./animations";
 import styles from "./page.module.scss";
 import { useAppState } from "@/utils/appStateContext";
 import { AnimatePresence } from "framer-motion";
@@ -15,13 +15,17 @@ const Navbar = () => {
       href: "/",
     },
     {
+      title: "Gallery",
+      href: "/gallery",
+    },
+    {
       title: "Events",
       href: "/events",
     },
-    {
-      title: "About",
-      href: "/#about",
-    },
+    // {
+    //   title: "About",
+    //   href: "/#about",
+    // },
     {
       title: "Domains",
       href: "/#domains",
@@ -68,12 +72,18 @@ const Navbar = () => {
     >
       <div className="fixed flex justify-center w-full h-full bg-[black] text-[white] z-5">
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-24 w-full mx-80 items-baseline h-max">
-          <motion.p
-            transition={{ delay: 0.5 }}
-            className="text-4xl sm:text-6xl w-max sm:w-auto font-bold"
-          >
-            Where to?
-          </motion.p>
+          <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+            <motion.p
+              variants={headingReveal}
+              initial="initial"
+              animate="open"
+              exit="closed"
+              custom={1.25}
+              className="text-4xl sm:text-6xl w-max sm:w-auto font-bold"
+            >
+              Where to?
+            </motion.p>
+          </div>
           <div className="flex flex-col gap-8 text-2xl sm:text-4xl font-light">
             {items.map((item, index) => {
               return <Item key={index} data={{ ...item, index }} />;

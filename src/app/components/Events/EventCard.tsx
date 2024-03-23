@@ -91,18 +91,22 @@ const EventCard = ({
               <p className="text-sm font-semibold text-gray-500">{venue}</p>
             </div>
             <div className="my-2 flex items-center justify-between p-4">
-              <p className="text-sm font-semibold text-gray-500">Collab:</p>
-              <div className="space-x-2">
-                {collabWith.map((collab: collab, index: number) => (
-                  <Link
-                    key={index}
-                    href={collab.url}
-                    className="rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-600"
-                  >
-                    {collab.name}
-                  </Link>
-                ))}
-              </div>
+              {collabWith.length > 0 ? (
+                <>
+                  <p className="text-sm font-semibold text-gray-500">Collab:</p>
+                  <div className="space-x-2">
+                    {collabWith.map((collab: collab, index: number) => (
+                      <Link
+                        key={index}
+                        href={collab.url}
+                        className="rounded-full bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-600"
+                      >
+                        {collab.name}
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              ) : null}
             </div>
             <Link
               href={registrationUrl}

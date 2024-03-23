@@ -9,14 +9,27 @@ import Circles from "./Circles";
 const Hero = () => {
   const mainPragraph = useRef(null);
   const isInView = useInView(mainPragraph);
-  const content = `Google Developer Student Clubs (GDSC) are community groups for
-  college and university students interested in Google developer
-  technologies. Students from all undergraduate or graduate programs
-  with an interest in growing as a developer are welcome. By joining a
-  GDSC, students grow their knowledge in a peer-to-peer learning
-  environment and build solutions for local businesses and their
-  community.`;
+  const content = `GDSC IET DAVV is a part of dynamic community where students from various backgrounds come together to explore the latest in technology, learn about Google's tools and platforms, and collaborate on innovative projects. GDSC is a place to grow as a developer, starting from a beginner developer to an advanced developer. It's not always about “programming” but also about connecting, learning together and growing together.`;
+  // async function getLatestEvent() {
+  //   try {
+  //     const response = await fetch(
+  //       "https://gdsc.community.dev/institute-of-engineering-and-technology-davv-indore/"
+  //     );
+  //     const html = await response.text();
+  //     // Parse the HTML to extract the relevant event information
+  //     // You can use libraries like Cheerio or querySelectorAll to find specific elements.
+  //     // For example:
+  //     // const eventTitle = html.querySelector('.event-title').textContent;
+  //     // const eventLink = html.querySelector('.event-link').href;
+  //     // Now you have the event title and link to display on your site.
+  //     // Update your site's content accordingly.
+  //   } catch (error) {
+  //     console.error("Error fetching data:", error);
+  //   }
+  // }
 
+  // Call the function to retrieve the latest event data
+  // getLatestEvent();
   return (
     <div className="mt-36 flex flex-col lg:flex-row w-full justify-between pt-10 gap-24 lg:gap-0 items-center md:items-start sm:pt-0">
       {/* Left */}

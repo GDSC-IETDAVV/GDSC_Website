@@ -25,7 +25,7 @@ const Communities = () => {
   const valuesPara =
     "We believe you don't need to code to be a developer. We develop both products and people by making Google technologies accessible to everyone through workshops, events, and more. Dreamers, problem solvers, and tinkerers: That's who we are.";
   const eventPara =
-    "We believe you don't need to code to be a developer. We develop both products and people by making Google technologies accessible to everyone through workshops, events, and more. Dreamers, problem solvers, and tinkerers: That's who we are.";
+    "Immerse yourself in the future of technology at our cutting-edge events, where ideas become reality and innovation flourishes. Here, you'll discover workshops, resources, and networking opportunities designed to propel your career in the tech field.";
   return (
     // mid
     <div className="flex flex-col w-full gap-12 pt-24" id="about">
@@ -111,7 +111,7 @@ const Communities = () => {
         {/* Mission/Values */}
         <div className="flex w-full md:flex-row gap-8 flex-col justify-between items-baseline">
           {/* Misson */}
-          <div className="flex flex-col gap-3 md:pr-8 justify-between items-baseline w-full md:border-r md:border-r-black">
+          <div className="flex flex-col gap-3 md:pr-8 justify-between items-baseline w-full md:border-r md:border-r-gray-300">
             <motion.span>
               <div className={styles.heading}>
                 <motion.div
@@ -223,7 +223,7 @@ const Communities = () => {
           <div className={styles.descEthic} ref={eventRef}>
             <div className={styles.body}>
               <p className={styles.mainPara}>
-                {missionPara.split(" ").map((word, index) => {
+                {eventPara.split(" ").map((word, index) => {
                   return (
                     // mask
                     <span key={index} className={styles.mask}>
