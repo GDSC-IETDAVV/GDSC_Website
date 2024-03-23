@@ -97,7 +97,7 @@ const Gallery = () => {
   }, []);
   return (
     // Main Container
-    <div className="flex flex-col w-full h-full justify-center items-center">
+    <div className="flex flex-col w-full h-full justify-center items-center mt-24">
       <div
         className="w-screen h-screen flex justify-center"
         onMouseMove={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -172,9 +172,11 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="w-full px-60 flex flex-col gap-10">
-        <div className="font-medium text-3xl">Our Memorable Occasions</div>
-        <div className="flex flex-row flex-wrap gap-12 items-center justify-between w-full">
+      <div className="w-full lg:px-60 flex flex-col items-center lg:items-start gap-10">
+        <div className="font-medium text-2xl md:text-3xl">
+          Our Memorable Occasions
+        </div>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap gap-12 items-center justify-between w-full">
           {occasions.map((singleOccasion, index) => {
             const { name, src, path, folderID } = singleOccasion;
             return (

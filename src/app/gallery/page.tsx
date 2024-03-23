@@ -15,7 +15,7 @@ const Page = () => {
     <div className="flex flex-col items-center gap-24 px-12 xl:px-60">
       <Header />
       <AnimatePresence mode="wait">{isOpen && <Navbar />}</AnimatePresence>
-      <div className="pt-24 h-full">
+      <div>
         <Gallery />
       </div>
       <Footer />
