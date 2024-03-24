@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 interface cardArray {
   name: string;
   role: string;
@@ -26,16 +26,39 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
         className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-3 lg:mx-0 lg:max-w-none lg:gap-x-8 xl:col-span-2"
       >
         {people.map((person) => (
-          <li key={person.name}>
+          <li
+            key={person.name}
+            style={
+              person.name === "Kanishk Tiwari"
+                ? { boxShadow: "0 0 1px 1px #fde047" }
+                : {}
+            }
+            className="p-3 rounded-xl"
+          >
             <img
-              className="aspect-[1/1] w-full rounded-2xl object-cover object-center"
+              className={
+                "aspect-[1/1] w-full rounded-2xl object-cover object-center "
+              }
               src={person.imageUrl}
               alt={person.name}
             />
+            {/* <Image
+              src={person.imageUrl}
+              alt={person.name}
+              height={250}
+              width={250}
+            /> */}
             <h3 className="mt-6 text-lg font-semibold leading-8 text-gray-900">
               {person.name}
             </h3>
             <p className="text-base leading-7 text-gray-600">{person.role}</p>
+            {/* {person.name === "Kanishk Tiwari" ? (
+              <p className="text-base leading-7 text-gray-600">
+                (I made this website)
+              </p>
+            ) : (
+              ""
+            )} */}
             {/* <p className="mt-4 text-base leading-7 text-gray-600 text-justify">
 							{person.bio}
 						</p> */}
@@ -105,3 +128,9 @@ const TeamCards: React.FC<CardProps> = ({ people, title }) => {
 };
 
 export default TeamCards;
+
+/**
+ * (person.name === "Kanishk Tiwari"
+                  ? "hover:scale-110 duration-150"
+                  : "")
+ */

@@ -210,7 +210,10 @@ const Footer = () => {
           </motion.div>
         </div>
         {/* Text */}
-        <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}>
+        <div
+          style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
+          className="overflow-hidden"
+        >
           <motion.div
             variants={headingReveal}
             initial="initial"
@@ -221,9 +224,15 @@ const Footer = () => {
             exit="closed"
             custom={4}
           >
-            <span className="font-normal sm:text-xl text-lg">
-              Developer&#39;s Student Club
-            </span>
+            <div className="font-normal cursor-pointer text-[17px] md:text-xl overflow-hidden flex relative whitespace-nowrap gap-3 transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] group hover:pr-16">
+              <span className="absolute -left-[300px] group-hover:translate-x-[300px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)]">
+                Developed by{" "}
+                <span className="font-semibold">Kanishk Tiwari</span>
+              </span>
+              <span className="group-hover:translate-x-[320px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)]">
+                Developer&#39;s Student Club
+              </span>
+            </div>
           </motion.div>
         </div>
       </div>
@@ -232,3 +241,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+/**
+ * <span className="font-normal sm:text-xl text-lg">
+              Developer&#39;s Student Club
+            </span>
+ */

@@ -142,7 +142,7 @@ const OccasionGallery = ({
         </div>
         {selectedItem && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="bg-white p-4 rounded-lg relative flex flex-col gap-3 max-w-screen-md mx-auto">
+            <div className="bg-white p-2 rounded-lg relative flex flex-col gap-3 max-w-screen-md mx-auto">
               <div className="w-full flex justify-between items-center mb-1 px-2">
                 <div className="text-lg font-medium">{selectedItem.name}</div>
                 <Image
