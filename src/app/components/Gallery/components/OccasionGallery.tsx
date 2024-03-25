@@ -45,7 +45,7 @@ const OccasionGallery = ({
       }
       if (json) {
         setImageData((prevImageData) => {
-          const newImages = json.files.filter((newImage: image) => {
+          const newImages = json?.files?.filter((newImage: image) => {
             return (
               !prevImageData ||
               !prevImageData.some((prevImage) => prevImage.id === newImage.id)
@@ -142,9 +142,9 @@ const OccasionGallery = ({
         </div>
         {selectedItem && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="bg-white p-2 rounded-lg relative flex flex-col gap-3 max-w-screen-md mx-auto">
+            <div className="bg-white p-2 rounded-lg relative flex flex-col gap-3 max-w-screen-md mx-auto lg:h-[90%]">
               <div className="w-full flex justify-between items-center mb-1 px-2">
-                <div className="text-lg font-medium">{selectedItem.name}</div>
+                <div className="text-lg font-medium px-2 pt-2">{selectedItem.name}</div>
                 <Image
                   src={"/cross.png"}
                   className="top-0 right-0 text-gray-600 cursor-pointer"
@@ -154,21 +154,23 @@ const OccasionGallery = ({
                   alt="close"
                 />
               </div>
-              <div className="">
+              <div className="lg:h-[95%]">
                 {selectedItem.type.includes("video") ? (
                   <iframe
                     src={`https://drive.google.com/file/d/${selectedItem.id}/preview`}
+                    className="h-full object-contain"
                     height={screen.width > 1000 ? 420 : 350}
                     width={screen.width > 1000 ? 420 : 350}
                     allow="autoplay"
                   />
                 ) : (
-                  <div>
+                  <div className="lg:h-[98%]">
                     <Image
                       loader={() =>
                         `https://lh3.googleusercontent.com/d/${selectedItem.id}?q=80`
                       }
                       src={`https://lh3.googleusercontent.com/d/${selectedItem.id}?q=80`}
+                      className="object-contain h-full w-auto"
                       height={screen.width > 1000 ? 420 : 350}
                       width={screen.width > 1000 ? 420 : 350}
                       alt={selectedItem.name}
