@@ -227,10 +227,10 @@ const Footer = () => {
             <div className="font-normal cursor-pointer text-[16px] md:text-xl overflow-hidden flex relative whitespace-nowrap gap-3 transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] group hover:pr-16">
               <span className="absolute -left-[300px] group-hover:translate-x-[300px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)]">
                 Developed by{" "}
-                <span className="font-semibold absolute left-[148px] group-hover:translate-y-[24px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[2500ms]">
+                <span className="font-semibold absolute left-[120px] sm:left-[148px] group-hover:translate-y-[24px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[2500ms]">
                   Kanishk Tiwari
                 </span>
-                <span className="font-semibold absolute left-[148px] -top-[24px] group-hover:translate-y-[24px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[2500ms]">
+                <span className="font-semibold absolute left-[120px] sm:left-[148px] -top-[24px] group-hover:translate-y-[24px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[2500ms]">
                   Mustafa Azad
                 </span>
               </span>
