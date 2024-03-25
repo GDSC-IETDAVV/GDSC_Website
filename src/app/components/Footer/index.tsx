@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Map from "./Map";
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
@@ -11,6 +11,24 @@ const Footer = () => {
   const footerRef = useRef(null);
   const isInView = useInView(reachRef);
   const footerInView = useInView(footerRef);
+  const [kString, setKString] = useState("group-hover:translate-y-[24px]");
+  const [mString, setMString] = useState("group-hover:translate-y-[24px]");
+  let flag = false;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (flag) {
+        setKString("group-hover:translate-y-[0px]");
+        setMString("group-hover:translate-y-[-24px]");
+      } else {
+        setKString("group-hover:translate-y-[24px]");
+        setMString("group-hover:translate-y-[24px]");
+      }
+      flag = !flag;
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div
       className="flex flex-col justify-center gap-10 pb-10 items-center w-full pt-20"
@@ -227,10 +245,20 @@ const Footer = () => {
             <div className="font-normal cursor-pointer text-[16px] md:text-xl overflow-hidden flex relative whitespace-nowrap gap-3 transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] group hover:pr-16">
               <span className="absolute -left-[300px] group-hover:translate-x-[300px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)]">
                 Developed by{" "}
-                <span className="font-semibold absolute left-[120px] sm:left-[148px] group-hover:translate-y-[24px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[2500ms]">
+                <span
+                  className={
+                    "font-semibold absolute left-[120px] sm:left-[148px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[3000ms] " +
+                    kString
+                  }
+                >
                   Kanishk Tiwari
                 </span>
-                <span className="font-semibold absolute left-[120px] sm:left-[148px] -top-[24px] group-hover:translate-y-[24px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[2500ms]">
+                <span
+                  className={
+                    "font-semibold absolute left-[120px] sm:left-[148px] -top-[24px] transition-all duration-700 ease-[cubic-bezier(0.76, 0, 0.24, 1)] delay-[3000ms] " +
+                    mString
+                  }
+                >
                   Mustafa Azad
                 </span>
               </span>
