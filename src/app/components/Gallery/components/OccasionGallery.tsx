@@ -79,6 +79,22 @@ const OccasionGallery = ({
     allowScroll();
   };
 
+  const handleDownload = async (imageUrl: string, imageName: string) => {
+    try {
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", imageName);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error("Error downloading image:", error);
+    }
+  };
+
   return !error.code ? (
     imageData ? (
       <div className="pt-36 h-full flex flex-col">
@@ -158,7 +174,7 @@ const OccasionGallery = ({
               </div>
               <div className="lg:h-[95%]">
                 {selectedItem.type.includes("video") ? (
-                  <div className="h-[80vh]">
+                  <div className="h-[80vh] pb-10">
                     <iframe
                       src={`https://drive.google.com/file/d/${selectedItem.id}/preview`}
                       className="h-full object-contain"
@@ -168,19 +184,43 @@ const OccasionGallery = ({
                     />
                   </div>
                 ) : (
-                  <div className="lg:h-[98%]">
+                  <div className="lg:h-[98%] pb-10">
                     <Image
                       loader={() =>
                         `https://lh3.googleusercontent.com/d/${selectedItem.id}?q=80`
                       }
                       src={`https://lh3.googleusercontent.com/d/${selectedItem.id}?q=80`}
                       className="object-contain h-full w-auto"
+                      unoptimized={true}
                       height={screen.width > 1000 ? 420 : 350}
                       width={screen.width > 1000 ? 420 : 350}
                       alt={selectedItem.name}
                     />
                   </div>
                 )}
+                <div className="w-full flex justify-end absolute bottom-1 md:bottom-2 px-4 md:px-8">
+                  <button
+                    className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                    onClick={() => {
+                      selectedItem.type.includes("video")
+                        ? handleDownload(
+                            `https://drive.google.com/file/d/${selectedItem.id}/preview`,
+                            selectedItem.name
+                          )
+                        : handleDownload(
+                            `https://lh3.googleusercontent.com/d/${selectedItem.id}?q=80`,
+                            selectedItem.name
+                          );
+                    }}
+                  >
+                    <Image
+                      src={"/download-logo.png"}
+                      width={20}
+                      height={20}
+                      alt="download-logo"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -192,9 +192,12 @@ const Gallery = () => {
                     <Image
                       loader={() => src}
                       src={src}
-                      layout="fill"
-                      objectFit="cover"
+                      // layout="fill"
+                      // objectFit="cover"
+                      fill={true}
+                      style={{ objectFit: "cover" }}
                       alt="occasion-image"
+                      unoptimized={true}
                     />
                   </div>
                   <div className="text-xl py-5 font-medium w-max">{name}</div>
