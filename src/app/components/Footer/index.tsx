@@ -24,7 +24,7 @@ const Footer = () => {
         setMString("group-hover:translate-y-[24px]");
       }
       flag = !flag;
-    }, 1000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);

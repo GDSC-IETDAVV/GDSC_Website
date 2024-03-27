@@ -36,18 +36,22 @@ export const occasions = [
         folderID:"1KrpRsEhH9SU18p37wV1OQju4yTAYLNae"
     },
     {
-        name: "Volunteer Meet",
+        name: "Volunteer Meet 2.0",
         src:"https://lh3.googleusercontent.com/d/18TO0jtxMSXnIIT8324oiiOf2brpwjJd9",
-        path: "/volunteer",
+        path: "/volunteer-2.0",
         folderID:"1XFdpMZ8uOuXN2FVQdU1zJK908sL6Nt-h"
     },
-    
-    
     {
         name: "Invento",
         src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC7vypod6Ffsl8CVuFBjssWxoG5mBp99PdQiCd_Gti_A&s",
         path: "/invento",
         folderID: "1_p4Uyal6E3-msw6grI87QffNvtbWEIoi"
+    },
+    {
+        name: "Volunteer Meet",
+        src:"https://lh3.googleusercontent.com/d/1-kQyKSnkJeELSjvsODlGMahCsKiBxDXS",
+        path: "/volunteer",
+        folderID:"15X-IuxUh9gXwb50fbGw9zjmtUOBw_maq"
     },
     {
         name: "Tech Unleash",
