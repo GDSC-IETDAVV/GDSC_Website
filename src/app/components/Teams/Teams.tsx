@@ -42,8 +42,7 @@ const mentors = [
   {
     name: "Kunal Sangtiani",
     role: "GDSC mentor",
-    imageUrl:
-      "https://media.licdn.com/dms/image/D4D03AQGy3TvNe63MGQ/profile-displayphoto-shrink_200_200/0/1707193529931?e=2147483647&v=beta&t=3IKyIjAOAMCV3fbbCJMRIwM-uObn8uPNAcukvSYDF2o",
+    imageUrl: "https://avatars.githubusercontent.com/u/86314140?v=4",
     bio: "Web Development:\nFront-End Technologies: HTML, CSS, Sass, Javascript, Next Js, React/Redux/Thunk/Saga, Material UI, Tailwind CSS\nBack-End Technologies & Frameworks: Django, Flask, Node Js, Express, Firebase, RESTful APIs\nTools: Git/Github, WordPress, VSC.\nProgramming Languages: C/C++, Javascript, Typescript, Python, Solidity.\nBlockchain: Hardhat, IPFS, Moralis, The Graph.\n\nCompetitive Programming | Specialist on Codeforces(1400+) | CodeChef: 4⭐ (Max: 1878) |\n\nProficient in Adobe Creative Suite.\nAdobe Photoshop | Adobe Illustrator\n\nWebsite: www.kunaldev.tech\nEmail: ksangtiani13@gmail.com\nGithub: https://github.com/kunals131",
     linkedinUrl: "https://www.linkedin.com/in/kunal-sangtiani-4373581bb",
   },
@@ -67,7 +66,7 @@ const mentors = [
     name: "Piyush Agrawal",
     role: "GDSC mentor",
     imageUrl:
-      "https://media.licdn.com/dms/image/D4D35AQFK6vyB3g0UeA/profile-framedphoto-shrink_800_800/0/1697196888374?e=1707757200&v=beta&t=9g_B-ZzALqwmNpK7rpMQedzJuR_fha_Dun3N1ozvxiM",
+      "https://media.licdn.com/dms/image/D4D03AQGTafi7nn_CFg/profile-displayphoto-shrink_200_200/0/1697196886837?e=2147483647&v=beta&t=WsqeuWkVMhad3Xu3n7sCQ09ZsnbvCSIIktIFFNCS7Zo",
     bio: "As a computer engineering student at IET DAVV, Indore, I have a strong foundation in computer science and a passion for technology and problem-solving. I have maintained a high CGPA of 9.025/10 and completed relevant coursework in data structures, algorithms, software engineering, networks, and databases.\n\nI have also developed my skills in various programming languages and technologies, such as Javascript, C++, Java, React, Redux, Node, Express, MongoDB, SQL, Restful APIs, Spring, and SpringBoot. I have applied these skills in my professional and personal projects, such as working as a full-stack developer at Arch Labs and contributing to the Barclays Apply Simulator as a BA3 summer intern at Barclays.\n\nAdditionally, I have participated in numerous hackathons and coding competitions, where I have demonstrated my creativity and innovation. Some of my notable achievements include winning the Smart India Hackathon 2022 and the Singapore India Hackathon 2023, as well as being an Expert on CodeForces and a Knight on LeetCode.\n\nI am always eager to learn and grow, and I am open to opportunities where I can leverage my skills and contribute to impactful projects. I believe in the power of technology to solve complex problems and improve lives.",
     linkedinUrl: "https://www.linkedin.com/in/p1yu5h0",
   },
