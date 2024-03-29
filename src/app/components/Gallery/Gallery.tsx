@@ -107,7 +107,7 @@ const Gallery = () => {
         <div className="w-full h-[85%] overflow-visible relative">
           {/* Plane 1 */}
           <div
-            className={`z-10 w-full h-full absolute ${styles.plane} hidden sm:block`}
+            className={`z-10 w-full h-full absolute ${styles.plane} hidden md:block`}
             ref={plane1Ref}
             style={{ opacity: 0, transition: "opacity 2s ease-in-out" }}
           >
@@ -122,7 +122,7 @@ const Gallery = () => {
           </div>
           {/* Plane 2 */}
           <div
-            className={`z-5 w-full h-full absolute ${styles.plane} hidden md:block`}
+            className={`z-5 w-full h-full absolute ${styles.plane} hidden xl:block`}
             ref={plane2Ref}
             style={{ opacity: 0, transition: "opacity 2s ease-in-out" }}
           >
@@ -142,7 +142,7 @@ const Gallery = () => {
           </div>
           {/* Plane 3 */}
           <div
-            className={`-z-20 w-full h-full absolute ${styles.plane} hidden lg:block`}
+            className={`-z-20 w-full h-full absolute ${styles.plane} hidden xl:block`}
             ref={plane3Ref}
             style={{ opacity: 0, transition: "opacity 2s ease-in-out" }}
           >
@@ -172,11 +172,11 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:px-60 flex flex-col items-center lg:items-start gap-10">
+      <div className="w-full lg:px-72 flex flex-col items-center lg:items-start gap-10">
         <div className="font-medium text-2xl md:text-3xl">
           Our Memorable Occasions
         </div>
-        <div className="flex flex-col lg:flex-row lg:flex-wrap gap-12 items-center justify-between w-full">
+        <div className="flex flex-col md:flex-row md:flex-wrap gap-12 items-center justify-center xl:justify-start w-full">
           {occasions.map((singleOccasion, index) => {
             const { name, src, path, folderID } = singleOccasion;
             return (
