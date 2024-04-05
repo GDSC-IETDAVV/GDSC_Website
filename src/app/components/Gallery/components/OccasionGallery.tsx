@@ -1,7 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FC, useCallback, useRef } from "react";
 import Image from "next/image";
 import Shimmer from "./Shimmer";
-import { useScrollBlock } from "@/utils/useScrollBlock";
+// import { useScrollBlock } from "@/utils/useScrollBlock";
+import LightGallery from "lightgallery/react";
+// import styles
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+// If you want you can use SCSS instead of css
+import "lightgallery/scss/lightgallery.scss";
+import "lightgallery/scss/lg-zoom.scss";
+// import plugins if you need
+import lgThumbnail from "lightgallery/plugins/thumbnail";
+import lgZoom from "lightgallery/plugins/zoom";
+import { LightGallery as ILightGallery } from "lightgallery/lightgallery";
 interface image {
   kind: string;
   mimeType: string;
@@ -30,7 +42,7 @@ const OccasionGallery = ({
     name: string;
   }>(null);
 
-  const [blockScroll, allowScroll] = useScrollBlock();
+  // const [blockScroll, allowScroll] = useScrollBlock();
 
   const fetchImages = async () => {
     try {
@@ -69,31 +81,51 @@ const OccasionGallery = ({
   useEffect(() => {
     fetchImages();
   }, [url]);
-  const handleItemClick = (videoId: string, type: string, name: string) => {
-    setSelectedItem({ id: videoId, type: type, name: name });
-    blockScroll();
-  };
+  // const handleItemClick = (videoId: string, type: string, name: string) => {
+  //   setSelectedItem({ id: videoId, type: type, name: name });
+  //   blockScroll();
+  // };
 
-  const handleCloseModal = () => {
-    setSelectedItem(null);
-    allowScroll();
-  };
+  // const handleCloseModal = () => {
+  //   setSelectedItem(null);
+  //   allowScroll();
+  // };
 
-  const handleDownload = async (imageUrl: string, imageName: string) => {
-    try {
-      const response = await fetch(imageUrl);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", imageName);
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (error) {
-      console.error("Error downloading image:", error);
-    }
-  };
+  // const handleDownload = async (imageUrl: string, imageName: string) => {
+  //   try {
+  //     const response = await fetch(imageUrl);
+  //     const blob = await response.blob();
+  //     const url = window.URL.createObjectURL(blob);
+  //     const link = document.createElement("a");
+  //     link.href = url;
+  //     link.setAttribute("download", imageName);
+  //     document.body.appendChild(link);
+  //     link.click();
+  //     document.body.removeChild(link);
+  //   } catch (error) {
+  //     console.error("Error downloading image:", error);
+  //   }
+  // };
+  const lightGalleryRef = useRef(null);
+  const onInit = useCallback((detail: any) => {}, []);
+
+  const dynamicEl = [
+    {
+      src: "https://via.placeholder.com/1400x800.png?text=Image+1",
+      responsive:
+        "https://via.placeholder.com/800x480.png?text=Image+1 800w, https://via.placeholder.com/480x240.png?text=Image+1 480w",
+      thumb: "https://via.placeholder.com/240x120.png?text=Image+1",
+      subHtml: `<div class="lightGallery-captions"> <h4>Placeholder Image 1</h4> <p>Published on January 1, 2023</p> </div>`,
+    },
+    {
+      src: "https://via.placeholder.com/1400x800.png?text=Image+2",
+      responsive:
+        "https://via.placeholder.com/800x480.png?text=Image+2 800w, https://via.placeholder.com/480x240.png?text=Image+2 480w",
+      thumb: "https://via.placeholder.com/240x120.png?text=Image+2",
+      subHtml: `<div class="lightGallery-captions"> <h4>Placeholder Image 2</h4><p>Published on January 2, 2023</p></div>`,
+    },
+    // Add more placeholder images as needed
+  ];
 
   return !error.code ? (
     imageData ? (
@@ -103,60 +135,78 @@ const OccasionGallery = ({
           <span className="font-semibold">{name ? name.toString() : null}</span>
         </div>
         <div className="w-full my-8 columns-1 md:columns-2 xl:columns-3 gap-8 overflow-y-scroll">
-          {imageData.map((singleItem: image, index: number) => {
-            const src = `https://lh3.googleusercontent.com/d/${singleItem.id}?w=200&q=50`;
-            const isVideo = singleItem.mimeType.includes("video");
-            return !isVideo ? (
-              <div
-                key={singleItem.name}
-                className="my-3 cursor-pointer"
-                onClick={() =>
-                  handleItemClick(
-                    singleItem.id,
-                    singleItem.mimeType,
-                    singleItem.name
-                  )
-                }
-              >
-                <Image
-                  loader={() => src}
-                  src={src}
-                  height={400}
-                  width={400}
-                  alt={`${singleItem.name}`}
-                />
-              </div>
-            ) : (
-              <div
-                key={singleItem.name}
-                className="my-3 flex flex-col items-center justify-center cursor-pointer relative"
-                onClick={() =>
-                  handleItemClick(
-                    singleItem.id,
-                    singleItem.mimeType,
-                    singleItem.name
-                  )
-                }
-              >
-                <Image
-                  loader={() => src}
-                  src={src}
-                  height={400}
-                  width={400}
-                  alt={`${singleItem.name}`}
-                />
-                <Image
-                  src={"/video-icon.png"}
-                  height={88}
-                  width={88}
-                  alt="video-icon"
-                  className="absolute"
-                />
-              </div>
-            );
-          })}
+          {/* <LightGallery
+            onInit={onInit}
+            speed={500}
+            mode="lg-fade"
+            allowMediaOverlap={true}
+            plugins={[lgThumbnail, lgZoom]}
+          >
+            {imageData.map((singleItem: image, index: number) => {
+              const src = `https://lh3.googleusercontent.com/d/${singleItem.id}?w=200&q=50`;
+              // const isVideo = singleItem.mimeType.includes("video");
+              return (
+                <a href={src}>
+                  <Image
+                    loader={() => src}
+                    src={src}
+                    height={400}
+                    width={400}
+                    alt={`${singleItem.name}`}
+                    key={singleItem.name}
+                    className="my-3 cursor-pointer"
+                  />
+                </a>
+              );
+            })}
+          </LightGallery> */}
+
+          <LightGallery
+            onInit={onInit}
+            speed={500}
+            mode="lg-fade"
+            allowMediaOverlap={true}
+            plugins={[lgThumbnail, lgZoom]}
+          >
+            {imageData.map((singleItem: image, index: number) => {
+              const src = `https://lh3.googleusercontent.com/d/${singleItem.id}?w=200&q=50`;
+              const isVideo = singleItem.mimeType.includes("video");
+              return !isVideo ? (
+                <a href={src}>
+                  <Image
+                    loader={() => src}
+                    src={src}
+                    height={400}
+                    width={400}
+                    alt={`${singleItem.name}`}
+                    key={singleItem.name}
+                    className="my-3 cursor-pointer"
+                  />
+                </a>
+              ) : (
+                <a
+                  data-lg-size="1280-720"
+                  data-video={
+                    '{"source": [{"src":"' +
+                    `https://drive.google.com/file/d/${singleItem.id}/preview` +
+                    '", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}}'
+                  }
+                  data-poster={`https://lh3.googleusercontent.com/d/${singleItem.id}?w=200&q=50`}
+                  // data-sub-html="<h4>'Peck Pocketed' by Kevin Herron | Disney Favorite</h4>"
+                >
+                  <img
+                    width={300}
+                    height={100}
+                    className="img-responsive"
+                    src={`https://lh3.googleusercontent.com/d/${singleItem.id}?w=200&q=50`}
+                    alt="video-thumbnail"
+                  />
+                </a>
+              );
+            })}
+          </LightGallery>
         </div>
-        {selectedItem && (
+        {/* {selectedItem && (
           <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
             <div className="bg-white p-2 rounded-lg relative flex flex-col gap-3 max-w-screen-md mx-auto lg:h-[90%]">
               <div className="w-full flex justify-between items-center mb-1 px-2">
@@ -224,7 +274,7 @@ const OccasionGallery = ({
               </div>
             </div>
           </div>
-        )}
+        )} */}
         {error.code && (
           <div className="text-red-500">Error: Failed to load images.</div>
         )}
@@ -241,3 +291,20 @@ const OccasionGallery = ({
 };
 
 export default OccasionGallery;
+
+/**
+ * 
+ *  <a
+        data-lg-size="1280-720"
+        data-video='{"source": [{"src":"/videos/video1.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "controls": true}}'
+        data-poster="/images/demo/html5-video-poster.jpg"
+        data-sub-html="<h4>'Peck Pocketed' by Kevin Herron | Disney Favorite</h4>"
+    >
+        <img
+            width="300"
+            height="100"
+            class="img-responsive"
+            src="/images/demo/html5-video-poster.jpg"
+        />
+    </a>
+ */
