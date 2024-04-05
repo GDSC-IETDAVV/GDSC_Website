@@ -147,8 +147,8 @@ const OccasionGallery = ({
                 />
                 <Image
                   src={"/video-icon.png"}
-                  height={88}
-                  width={88}
+                  height={80}
+                  width={80}
                   alt="video-icon"
                   className="absolute"
                 />

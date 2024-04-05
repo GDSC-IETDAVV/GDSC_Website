@@ -176,7 +176,7 @@ const Gallery = () => {
         <div className="font-medium text-2xl md:text-3xl">
           Our Memorable Occasions
         </div>
-        <div className="flex flex-col md:flex-row md:flex-wrap gap-12 items-center justify-center xl:justify-start w-full">
+        <div className="flex flex-row flex-wrap gap-12 items-center justify-center w-full">
           {occasions.map((singleOccasion, index) => {
             const { name, src, path, folderID } = singleOccasion;
             return (

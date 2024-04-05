@@ -93,7 +93,7 @@ const leads = [
     name: "Tanmay Bhadviya",
     role: "Co-Lead",
     imageUrl:
-      "https://media.licdn.com/dms/image/D4D03AQHnUYKm57LANw/profile-displayphoto-shrink_200_200/0/1701607424425?e=1712188800&v=beta&t=7aakWDu3zv1csWDjFvhUpAMv9xes5-k09CvjhJOrHN4",
+      "https://media.licdn.com/dms/image/D4D03AQHnUYKm57LANw/profile-displayphoto-shrink_200_200/0/1701607424425?e=2147483647&v=beta&t=PvrPIJq3ZpasDXvX01OY1c6PT7Suz0932RV6R1cONJM",
     bio: "I have a open minded sense of growth and support, I love to volunteer and contribute to field of my interest and would like to explore more! I have ample of experience in ML, Coding with Python and C++, Graphic Designing, flutter, UI/UX. I share interests in Problem solving, Designing solutions and much more.",
     xUrl: "https://twitter.com/TanmayBhadviya",
     linkedinUrl: "https://www.linkedin.com/in/tanmaybhadviya/",
