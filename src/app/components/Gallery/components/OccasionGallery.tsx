@@ -200,7 +200,7 @@ const OccasionGallery = ({
                 )}
                 <div className="w-full flex justify-end absolute bottom-1 md:bottom-2 px-4 md:px-8">
                   <button
-                    className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                    className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400"
                     onClick={() => {
                       selectedItem.type.includes("video")
                         ? handleDownload(
