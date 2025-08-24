@@ -324,7 +324,7 @@ export default function EventsPage() {
 
                     {/* Event Image */}
                     {event.image && (
-                      <div className="relative h-48 overflow-hidden">
+                      <div className="relative h-78 overflow-hidden">
                         <img
                           src={event.image}
                           alt={event.title}

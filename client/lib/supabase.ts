@@ -328,7 +328,12 @@ const withErrorHandling = async <T>(
   operation: () => Promise<T>,
   fallbackData?: any,
   operationName?: string,
-): Promise<{ success: boolean; data?: T; error?: string }> => {
+): Promise<{
+  success: boolean;
+  data?: T;
+  error?: string;
+  fallback?: boolean;
+}> => {
   try {
     const data = await operation();
     return { success: true, data };
